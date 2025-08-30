@@ -1,4 +1,5 @@
-// Create floating particles
+  
+        // Create floating particles
         document.addEventListener('DOMContentLoaded', () => {
             const particlesContainer = document.getElementById('particles');
             const particleCount = 15;
@@ -9,21 +10,21 @@
                 
                 // Random size between 5px and 20px
                 const size = Math.random() * 15 + 5;
-                particle.style.width = ${size}px;
-                particle.style.height = ${size}px;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
                 
                 // Random position
-                particle.style.left = ${Math.random() * 100}%;
-                particle.style.top = ${Math.random() * 100}%;
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
                 
                 // Random opacity
-                particle.style.opacity = ${Math.random() * 0.5 + 0.1};
+                particle.style.opacity = `${Math.random() * 0.5 + 0.1}`;
                 
                 // Random animation delay
-                particle.style.animationDelay = ${Math.random() * 15}s;
+                particle.style.animationDelay = `${Math.random() * 15}s`;
                 
                 // Random animation duration
-                particle.style.animationDuration = ${Math.random() * 20 + 10}s;
+                particle.style.animationDuration = `${Math.random() * 20 + 10}s`;
                 
                 particlesContainer.appendChild(particle);
             }
@@ -244,4 +245,5 @@
             
             // Initialize display
             updateDisplay();
-        });
+        });
+    
